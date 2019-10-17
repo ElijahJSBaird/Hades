@@ -41,11 +41,11 @@ OAuth2 token
 
 ### Milestones
 > Insert milestones here
-> Log in
-> Show posts
-	> with current upvotes, comment count, post age
-> View comments
-> Post
-> up/downvote
-> Search for subreddit
-> Filter by subreddit
+* Log in
+* Show posts
+	- with current upvotes, comment count, post age
+* View comments
+* Post
+* up/downvote
+* Search for subreddit
+* Filter by subreddit
