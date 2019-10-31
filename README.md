@@ -50,3 +50,8 @@ OAuth2 token
 * up/downvote
 * Search for subreddit
 * Filter by subreddit
+
+
+### Wireframes  
+
+![wireframes](./Wireframes/Wireframes.png)
