@@ -1,0 +1,16 @@
+PODS:
+  - p2.OAuth2 (4.2.0)
+
+DEPENDENCIES:
+  - p2.OAuth2 (~> 4.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - p2.OAuth2
+
+SPEC CHECKSUMS:
+  p2.OAuth2: d5ea9b928fc5d10d088d419db6f3380578b6f866
+
+PODFILE CHECKSUM: 898d4188dab37aea7c71a2002e69db4145a6ce09
+
+COCOAPODS: 1.7.5
