@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0B6BD995A00F32E6D345AC59 /* Pods_Hades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32902AEDAB021CFD302080F3 /* Pods_Hades.framework */; };
+		194E5BCE23715BAC008F155F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E5BCD23715BAC008F155F /* Config.swift */; };
+		194E5BD023716405008F155F /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E5BCF23716405008F155F /* AccountController.swift */; };
 		19511957236F789000999FEF /* RedditOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19511956236F789000999FEF /* RedditOAuth.swift */; };
-		1951195A236F86D900999FEF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19511959236F86D900999FEF /* LoginView.swift */; };
 		263CF3BEB95C66563CB0C9FA /* Pods_HadesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8C617B324E28B13EA55857 /* Pods_HadesUITests.framework */; };
 		A9B1A05A2367CCC800437055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1A0592367CCC800437055 /* AppDelegate.swift */; };
 		A9B1A05C2367CCC800437055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1A05B2367CCC800437055 /* SceneDelegate.swift */; };
@@ -42,8 +43,9 @@
 /* Begin PBXFileReference section */
 		017C60B69FCB85D2675797A6 /* Pods-HadesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HadesTests.debug.xcconfig"; path = "Target Support Files/Pods-HadesTests/Pods-HadesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		02F300F5D06109E40A133360 /* Pods-Hades.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hades.debug.xcconfig"; path = "Target Support Files/Pods-Hades/Pods-Hades.debug.xcconfig"; sourceTree = "<group>"; };
+		194E5BCD23715BAC008F155F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		194E5BCF23716405008F155F /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
 		19511956236F789000999FEF /* RedditOAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditOAuth.swift; sourceTree = "<group>"; };
-		19511959236F86D900999FEF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2172317B3EBABB0AAE4E6D59 /* Pods_HadesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HadesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32902AEDAB021CFD302080F3 /* Pods_Hades.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hades.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8C617B324E28B13EA55857 /* Pods_HadesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HadesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +153,8 @@
 				A9B1A0672367CCC900437055 /* Info.plist */,
 				A9B1A0612367CCC900437055 /* Preview Content */,
 				19511956236F789000999FEF /* RedditOAuth.swift */,
-				19511959236F86D900999FEF /* LoginView.swift */,
+				194E5BCD23715BAC008F155F /* Config.swift */,
+				194E5BCF23716405008F155F /* AccountController.swift */,
 			);
 			path = Hades;
 			sourceTree = "<group>";
@@ -403,11 +406,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194E5BD023716405008F155F /* AccountController.swift in Sources */,
 				A9B1A05A2367CCC800437055 /* AppDelegate.swift in Sources */,
 				19511957236F789000999FEF /* RedditOAuth.swift in Sources */,
 				A9B1A05C2367CCC800437055 /* SceneDelegate.swift in Sources */,
-				1951195A236F86D900999FEF /* LoginView.swift in Sources */,
 				A9B1A05E2367CCC800437055 /* ContentView.swift in Sources */,
+				194E5BCE23715BAC008F155F /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,7 +588,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = elijahBaird.Hades;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -605,7 +609,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = elijahBaird.Hades;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

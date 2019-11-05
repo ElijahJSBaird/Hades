@@ -9,7 +9,7 @@
 import SwiftUI
 import p2_OAuth2
 
-struct ContentView: View {
+struct LoginView: View {
     
     let oauth = OAuth2CodeGrant(settings: [
         "client_id": "TYISFe5UynBibw",                              // yes, this client-id will work!
@@ -23,18 +23,18 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            RedditLogo()
+            RedditLogo2()
             Button(action: {
                 RedditLoader()
             }) {
-                LoginButton()
+                LoginButton2()
             }
         }
         .padding()
     }
 }
 
-struct RedditLogo : View {
+struct RedditLogo2 : View {
     var body: some View {
         return Image("reddit")
             .resizable()
@@ -44,7 +44,7 @@ struct RedditLogo : View {
     }
 }
 
-struct LoginButton : View {
+struct LoginButton2 : View {
     var body: some View {
         return Text("Login")
             .font(.headline)
@@ -56,8 +56,8 @@ struct LoginButton : View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginView()
     }
 }

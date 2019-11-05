@@ -7,6 +7,7 @@ target 'Hades' do
 
   # Pods for Hades
   pod 'p2.OAuth2', '~> 4.2'
+  pod 'reddift', :git => 'https://github.com/sonsongithub/reddift.git', :branch => 'master'
 
   
   target 'HadesTests' do
