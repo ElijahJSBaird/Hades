@@ -7,13 +7,20 @@
 //
 
 import SwiftUI
+import reddift
+import UIKit
 
 struct ContentView: View {
+    let sharedInstance = Config.sharedInstance
     var body: some View {
         NavigationView {
             VStack {
                 RedditLogo()
-                NavigationLink(destination: AccountView()) {
+                Button(action: {
+                    do {
+                        try OAuth2Authorizer.sharedInstance.challengeWithAllScopes()
+                    } catch { }
+                }) {
                     LoginButton()
                 }
             }
@@ -50,10 +57,18 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct AccountView: View {
-    var body: some View {
-        // Need to convert AccountController.swift from UITableViewController
-        // to SwiftUI
-        AccountController()
-    }
-}
+//struct AccountView: UIViewControllerRepresentable {
+//
+//    var controllers: [UITableViewController]
+//
+//    func makeUIViewController(context: UIViewControllerRepresentableContext<AccountView>) -> UITableViewController {
+//        let accountViewController = AccountController()
+//        return accountViewController
+//    }
+//
+//    func updateUIViewController(_ accountViewController: UITableViewController, context: UIViewControllerRepresentableContext<AccountView>) {
+////        accountViewController.setViewControllers([controllers[0]], direction: .forward, animated: true)
+//    }
+//
+//    typealias UIViewControllerType = UITableViewController
+//}
