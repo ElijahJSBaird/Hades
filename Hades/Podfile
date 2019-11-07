@@ -6,7 +6,6 @@ target 'Hades' do
   use_frameworks!
 
   # Pods for Hades
-  pod 'p2.OAuth2', '~> 4.2'
   pod 'reddift', :git => 'https://github.com/sonsongithub/reddift.git', :branch => 'master'
 
   
