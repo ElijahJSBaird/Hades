@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B6BD995A00F32E6D345AC59 /* Pods_Hades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32902AEDAB021CFD302080F3 /* Pods_Hades.framework */; };
+		194E5BCE23715BAC008F155F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E5BCD23715BAC008F155F /* Config.swift */; };
+		1977558E2373B7EA0083C0CF /* reddift_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 1977558D2373B7EA0083C0CF /* reddift_config.json */; };
+		263CF3BEB95C66563CB0C9FA /* Pods_HadesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8C617B324E28B13EA55857 /* Pods_HadesUITests.framework */; };
 		A9B1A05A2367CCC800437055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1A0592367CCC800437055 /* AppDelegate.swift */; };
 		A9B1A05C2367CCC800437055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1A05B2367CCC800437055 /* SceneDelegate.swift */; };
 		A9B1A05E2367CCC800437055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1A05D2367CCC800437055 /* ContentView.swift */; };
@@ -15,6 +19,7 @@
 		A9B1A0662367CCC900437055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B1A0642367CCC900437055 /* LaunchScreen.storyboard */; };
 		A9B1A0712367CCC900437055 /* HadesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1A0702367CCC900437055 /* HadesTests.swift */; };
 		A9B1A07C2367CCC900437055 /* HadesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1A07B2367CCC900437055 /* HadesUITests.swift */; };
+		CBC5790C327061E54AC8B425 /* Pods_HadesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2172317B3EBABB0AAE4E6D59 /* Pods_HadesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		017C60B69FCB85D2675797A6 /* Pods-HadesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HadesTests.debug.xcconfig"; path = "Target Support Files/Pods-HadesTests/Pods-HadesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		02F300F5D06109E40A133360 /* Pods-Hades.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hades.debug.xcconfig"; path = "Target Support Files/Pods-Hades/Pods-Hades.debug.xcconfig"; sourceTree = "<group>"; };
+		194E5BCD23715BAC008F155F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		1977558D2373B7EA0083C0CF /* reddift_config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reddift_config.json; sourceTree = "<group>"; };
+		2172317B3EBABB0AAE4E6D59 /* Pods_HadesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HadesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32902AEDAB021CFD302080F3 /* Pods_Hades.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hades.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8C617B324E28B13EA55857 /* Pods_HadesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HadesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5990FDA9EF06B7A95BC80C /* Pods-Hades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hades.release.xcconfig"; path = "Target Support Files/Pods-Hades/Pods-Hades.release.xcconfig"; sourceTree = "<group>"; };
 		A9B1A0562367CCC800437055 /* Hades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B1A0592367CCC800437055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9B1A05B2367CCC800437055 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,9 @@
 		A9B1A0772367CCC900437055 /* HadesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HadesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B1A07B2367CCC900437055 /* HadesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadesUITests.swift; sourceTree = "<group>"; };
 		A9B1A07D2367CCCA00437055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA91993222C05EA44869B0BD /* Pods-HadesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HadesUITests.release.xcconfig"; path = "Target Support Files/Pods-HadesUITests/Pods-HadesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CEB09FC0F3290E4583B97978 /* Pods-HadesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HadesUITests.debug.xcconfig"; path = "Target Support Files/Pods-HadesUITests/Pods-HadesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDC6A9E9730B0E7E8C649668 /* Pods-HadesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HadesTests.release.xcconfig"; path = "Target Support Files/Pods-HadesTests/Pods-HadesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B6BD995A00F32E6D345AC59 /* Pods_Hades.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC5790C327061E54AC8B425 /* Pods_HadesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263CF3BEB95C66563CB0C9FA /* Pods_HadesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06BE2BC65B89D1D8C5C7C05F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02F300F5D06109E40A133360 /* Pods-Hades.debug.xcconfig */,
+				7E5990FDA9EF06B7A95BC80C /* Pods-Hades.release.xcconfig */,
+				017C60B69FCB85D2675797A6 /* Pods-HadesTests.debug.xcconfig */,
+				EDC6A9E9730B0E7E8C649668 /* Pods-HadesTests.release.xcconfig */,
+				CEB09FC0F3290E4583B97978 /* Pods-HadesUITests.debug.xcconfig */,
+				AA91993222C05EA44869B0BD /* Pods-HadesUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6C98842D5931142EC64E4A46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32902AEDAB021CFD302080F3 /* Pods_Hades.framework */,
+				2172317B3EBABB0AAE4E6D59 /* Pods_HadesTests.framework */,
+				6E8C617B324E28B13EA55857 /* Pods_HadesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9B1A04D2367CCC800437055 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +125,8 @@
 				A9B1A06F2367CCC900437055 /* HadesTests */,
 				A9B1A07A2367CCC900437055 /* HadesUITests */,
 				A9B1A0572367CCC800437055 /* Products */,
+				06BE2BC65B89D1D8C5C7C05F /* Pods */,
+				6C98842D5931142EC64E4A46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +150,8 @@
 				A9B1A0642367CCC900437055 /* LaunchScreen.storyboard */,
 				A9B1A0672367CCC900437055 /* Info.plist */,
 				A9B1A0612367CCC900437055 /* Preview Content */,
+				194E5BCD23715BAC008F155F /* Config.swift */,
+				1977558D2373B7EA0083C0CF /* reddift_config.json */,
 			);
 			path = Hades;
 			sourceTree = "<group>";
@@ -143,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9B1A0802367CCCA00437055 /* Build configuration list for PBXNativeTarget "Hades" */;
 			buildPhases = (
+				2A627D7F6D2E666AF5130AB5 /* [CP] Check Pods Manifest.lock */,
 				A9B1A0522367CCC800437055 /* Sources */,
 				A9B1A0532367CCC800437055 /* Frameworks */,
 				A9B1A0542367CCC800437055 /* Resources */,
+				7BE501C1286F796DDAEB01F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9B1A0832367CCCA00437055 /* Build configuration list for PBXNativeTarget "HadesTests" */;
 			buildPhases = (
+				F03EE3CA076505BE3011BAF0 /* [CP] Check Pods Manifest.lock */,
 				A9B1A0682367CCC900437055 /* Sources */,
 				A9B1A0692367CCC900437055 /* Frameworks */,
 				A9B1A06A2367CCC900437055 /* Resources */,
@@ -178,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9B1A0862367CCCA00437055 /* Build configuration list for PBXNativeTarget "HadesUITests" */;
 			buildPhases = (
+				5E4E8FF5B0E7DF993BDCEB49 /* [CP] Check Pods Manifest.lock */,
 				A9B1A0732367CCC900437055 /* Sources */,
 				A9B1A0742367CCC900437055 /* Frameworks */,
 				A9B1A0752367CCC900437055 /* Resources */,
@@ -241,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9B1A0662367CCC900437055 /* LaunchScreen.storyboard in Resources */,
+				1977558E2373B7EA0083C0CF /* reddift_config.json in Resources */,
 				A9B1A0632367CCC900437055 /* Preview Assets.xcassets in Resources */,
 				A9B1A0602367CCC900437055 /* Assets.xcassets in Resources */,
 			);
@@ -262,6 +313,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A627D7F6D2E666AF5130AB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hades-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E4E8FF5B0E7DF993BDCEB49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HadesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BE501C1286F796DDAEB01F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hades/Pods-Hades-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hades/Pods-Hades-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hades/Pods-Hades-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F03EE3CA076505BE3011BAF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HadesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9B1A0522367CCC800437055 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -270,6 +407,7 @@
 				A9B1A05A2367CCC800437055 /* AppDelegate.swift in Sources */,
 				A9B1A05C2367CCC800437055 /* SceneDelegate.swift in Sources */,
 				A9B1A05E2367CCC800437055 /* ContentView.swift in Sources */,
+				194E5BCE23715BAC008F155F /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +570,7 @@
 		};
 		A9B1A0812367CCCA00437055 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F300F5D06109E40A133360 /* Pods-Hades.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,13 +584,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = elijahBaird.Hades;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A9B1A0822367CCCA00437055 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E5990FDA9EF06B7A95BC80C /* Pods-Hades.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,13 +605,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = elijahBaird.Hades;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		A9B1A0842367CCCA00437055 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 017C60B69FCB85D2675797A6 /* Pods-HadesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +635,7 @@
 		};
 		A9B1A0852367CCCA00437055 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC6A9E9730B0E7E8C649668 /* Pods-HadesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +658,7 @@
 		};
 		A9B1A0872367CCCA00437055 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEB09FC0F3290E4583B97978 /* Pods-HadesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +679,7 @@
 		};
 		A9B1A0882367CCCA00437055 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA91993222C05EA44869B0BD /* Pods-HadesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
