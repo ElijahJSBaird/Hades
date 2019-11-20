@@ -12,6 +12,13 @@ import UIKit
 
 struct ContentView: View {
     let sharedInstance = Config.sharedInstance
+    let service: RedditService
+    let listingViewModel: ListingViewModel
+    init() {
+        self.service = RedditService()
+        self.listingViewModel = ListingViewModel(service: service)
+    }
+
     var body: some View {
         NavigationView {
             VStack {
@@ -21,6 +28,9 @@ struct ContentView: View {
                         try OAuth2Authorizer.sharedInstance.challengeWithAllScopes()
                     } catch { }
                 }) {
+                    NavigationLink(destination: FeedPosts(listingViewModel: listingViewModel)) {
+                        Text("Home")
+                    }
                     LoginButton()
                 }
             }
