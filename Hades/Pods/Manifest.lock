@@ -1,0 +1,33 @@
+PODS:
+  - HTMLSpecialCharacters (1.3.6)
+  - MiniKeychain (1.0.8)
+  - reddift (2.0.3):
+    - HTMLSpecialCharacters
+    - MiniKeychain
+
+DEPENDENCIES:
+  - reddift (from `https://github.com/sonsongithub/reddift.git`, branch `master`)
+
+SPEC REPOS:
+  trunk:
+    - HTMLSpecialCharacters
+    - MiniKeychain
+
+EXTERNAL SOURCES:
+  reddift:
+    :branch: master
+    :git: https://github.com/sonsongithub/reddift.git
+
+CHECKOUT OPTIONS:
+  reddift:
+    :commit: d93320dc35ad81e7bce9e5b76a87654a5bc84d7b
+    :git: https://github.com/sonsongithub/reddift.git
+
+SPEC CHECKSUMS:
+  HTMLSpecialCharacters: edc707cc4bcdc92eb3b9551de8cff94c1e6f9a19
+  MiniKeychain: 5d424fcd50fb8ab4cc946db2c3415dc391ffffdc
+  reddift: 42af05f3d2db6315cdf144be9256de36e86a523a
+
+PODFILE CHECKSUM: fdf5d3bffa05daf5eda6b24966a02fb571b05980
+
+COCOAPODS: 1.8.4

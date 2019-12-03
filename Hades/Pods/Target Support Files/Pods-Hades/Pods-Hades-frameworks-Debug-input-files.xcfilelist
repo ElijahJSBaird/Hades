@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Hades/Pods-Hades-frameworks.sh
+${BUILT_PRODUCTS_DIR}/HTMLSpecialCharacters/HTMLSpecialCharacters.framework
+${BUILT_PRODUCTS_DIR}/MiniKeychain/MiniKeychain.framework
+${BUILT_PRODUCTS_DIR}/reddift/reddift.framework

@@ -1,0 +1,6 @@
+framework module Pods_Hades {
+  umbrella header "Pods-Hades-umbrella.h"
+
+  export *
+  module * { export * }
+}
