@@ -11,6 +11,8 @@
 		194E5BCE23715BAC008F155F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E5BCD23715BAC008F155F /* Config.swift */; };
 		1977558E2373B7EA0083C0CF /* reddift_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 1977558D2373B7EA0083C0CF /* reddift_config.json */; };
 		263CF3BEB95C66563CB0C9FA /* Pods_HadesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8C617B324E28B13EA55857 /* Pods_HadesUITests.framework */; };
+		41C7D68E2396034E006F3B06 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C7D68D2396034E006F3B06 /* PostViewController.swift */; };
+		41C7D69023960FC7006F3B06 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C7D68F23960FC7006F3B06 /* SwiftUIView.swift */; };
 		A9B1A05A2367CCC800437055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1A0592367CCC800437055 /* AppDelegate.swift */; };
 		A9B1A05C2367CCC800437055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1A05B2367CCC800437055 /* SceneDelegate.swift */; };
 		A9B1A05E2367CCC800437055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1A05D2367CCC800437055 /* ContentView.swift */; };
@@ -46,6 +48,8 @@
 		1977558D2373B7EA0083C0CF /* reddift_config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reddift_config.json; sourceTree = "<group>"; };
 		2172317B3EBABB0AAE4E6D59 /* Pods_HadesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HadesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32902AEDAB021CFD302080F3 /* Pods_Hades.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hades.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C7D68D2396034E006F3B06 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		41C7D68F23960FC7006F3B06 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		6E8C617B324E28B13EA55857 /* Pods_HadesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HadesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5990FDA9EF06B7A95BC80C /* Pods-Hades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hades.release.xcconfig"; path = "Target Support Files/Pods-Hades/Pods-Hades.release.xcconfig"; sourceTree = "<group>"; };
 		A9B1A0562367CCC800437055 /* Hades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hades.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				A9B1A0592367CCC800437055 /* AppDelegate.swift */,
+				41C7D68F23960FC7006F3B06 /* SwiftUIView.swift */,
 				A9B1A05B2367CCC800437055 /* SceneDelegate.swift */,
 				A9B1A05D2367CCC800437055 /* ContentView.swift */,
 				A9B1A05F2367CCC900437055 /* Assets.xcassets */,
@@ -152,6 +157,7 @@
 				A9B1A0612367CCC900437055 /* Preview Content */,
 				194E5BCD23715BAC008F155F /* Config.swift */,
 				1977558D2373B7EA0083C0CF /* reddift_config.json */,
+				41C7D68D2396034E006F3B06 /* PostViewController.swift */,
 			);
 			path = Hades;
 			sourceTree = "<group>";
@@ -406,8 +412,10 @@
 			files = (
 				A9B1A05A2367CCC800437055 /* AppDelegate.swift in Sources */,
 				A9B1A05C2367CCC800437055 /* SceneDelegate.swift in Sources */,
+				41C7D69023960FC7006F3B06 /* SwiftUIView.swift in Sources */,
 				A9B1A05E2367CCC800437055 /* ContentView.swift in Sources */,
 				194E5BCE23715BAC008F155F /* Config.swift in Sources */,
+				41C7D68E2396034E006F3B06 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
