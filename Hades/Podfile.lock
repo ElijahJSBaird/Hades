@@ -9,7 +9,7 @@ DEPENDENCIES:
   - reddift (from `https://github.com/sonsongithub/reddift.git`, branch `master`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - HTMLSpecialCharacters
     - MiniKeychain
 
