@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import reddift
 import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+//    var session: Session?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -21,24 +23,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
-
+        let userToken = (UIApplication.shared.delegate as! AppDelegate).userToken
 //         Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+            if ((userToken) != nil) {
+                window.rootViewController = UIHostingController(rootView: contentView)
+            } else {
+                window.rootViewController = UIHostingController(rootView: FeedPosts(listingViewModel: ListingViewModel(service: RedditService()), token: (userToken!)))
+            }
             self.window = window
             window.makeKeyAndVisible()
         }
-        
-//        if let windowScene = scene as? UIWindowScene {
-//            let window = UIWindow(windowScene: windowScene)
-//            let service = RedditService()
-//            let listingViewModel = ListingViewModel(service: service)
-//
-//            window.rootViewController = UIHostingController(rootView: FeedPosts(listingViewModel: listingViewModel))
-//            self.window = window
-//            window.makeKeyAndVisible()
-//        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

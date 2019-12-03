@@ -9,7 +9,7 @@ DEPENDENCIES:
   - reddift (from `https://github.com/sonsongithub/reddift.git`, branch `master`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - HTMLSpecialCharacters
     - MiniKeychain
 
@@ -30,4 +30,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: fdf5d3bffa05daf5eda6b24966a02fb571b05980
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.7.5

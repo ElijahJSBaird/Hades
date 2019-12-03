@@ -13,6 +13,7 @@ import reddift
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var session: Session?
     var window: UIWindow?
+    var userToken: Token?
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
         // handle redirect URL from reddit.com
@@ -69,6 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             do {
                 let token = try OAuth2TokenRepository.token(of: currentName)
                 self.session = Session(token: token)
+                self.userToken = token
                 self.refreshSession()
             } catch { print(error) }
         } else {

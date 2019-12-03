@@ -14,6 +14,7 @@ struct ContentView: View {
     let sharedInstance = Config.sharedInstance
     let service: RedditService
     let listingViewModel: ListingViewModel
+    //@EnvironmentObject var token: Token
     init() {
         self.service = RedditService()
         self.listingViewModel = ListingViewModel(service: service)
@@ -26,11 +27,13 @@ struct ContentView: View {
                 Button(action: {
                     do {
                         try OAuth2Authorizer.sharedInstance.challengeWithAllScopes()
+//                       FeedPosts(listingViewModel: self.listingViewModel)
                     } catch { }
+//                    FeedPosts(listingViewModel: self.listingViewModel)
                 }) {
-                    NavigationLink(destination: FeedPosts(listingViewModel: listingViewModel)) {
-                        Text("Home")
-                    }
+//                    NavigationLink(destination: FeedPosts(listingViewModel: listingViewModel)) {
+//                        Text("Home")
+//                    }
                     LoginButton()
                 }
             }
