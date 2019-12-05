@@ -12,6 +12,7 @@ import UIKit
 
 struct ContentView: View {
     let sharedInstance = Config.sharedInstance
+    let postUIView = PostUIView()
     var body: some View {
         NavigationView {
             VStack {
@@ -21,6 +22,9 @@ struct ContentView: View {
                         try OAuth2Authorizer.sharedInstance.challengeWithAllScopes()
                     } catch { }
                 }) {
+                    NavigationLink(destination: PostUIView()){
+                        Text("Post")
+                    }
                     LoginButton()
                 }
             }
