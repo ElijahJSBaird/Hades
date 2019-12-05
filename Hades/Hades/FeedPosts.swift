@@ -11,7 +11,7 @@ import reddift
 
 struct FeedPosts: View {
     @ObservedObject var listingViewModel: ListingViewModel
-    @State var token: Token
+//    @State var token: Token
 
     @State private var query = ""
     @State private var subredditTitle = "r/all"

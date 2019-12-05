@@ -31,9 +31,9 @@ struct ContentView: View {
                     } catch { }
 //                    FeedPosts(listingViewModel: self.listingViewModel)
                 }) {
-//                    NavigationLink(destination: FeedPosts(listingViewModel: listingViewModel)) {
-//                        Text("Home")
-//                    }
+                    NavigationLink(destination: FeedPosts(listingViewModel: listingViewModel)) {
+                        Text("Home")
+                    }
                     LoginButton()
                 }
             }

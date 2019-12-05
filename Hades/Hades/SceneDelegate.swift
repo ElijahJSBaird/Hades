@@ -27,10 +27,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //         Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            if ((userToken) != nil) {
+            if ((userToken) == nil) {
+                print("Empty")
                 window.rootViewController = UIHostingController(rootView: contentView)
+                
             } else {
-                window.rootViewController = UIHostingController(rootView: FeedPosts(listingViewModel: ListingViewModel(service: RedditService()), token: (userToken!)))
+                print("not empty")
+//                window.rootViewController = UIHostingController(rootView: FeedPosts(listingViewModel: ListingViewModel(service: RedditService()), token: (userToken!)))
             }
             self.window = window
             window.makeKeyAndVisible()
