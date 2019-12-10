@@ -24,7 +24,7 @@ struct FeedPosts: View {
                     self.fetchListing()
                 }
                 ForEach(listingViewModel.posts) { post in
-                    NavigationLink(destination: WebView(request: URLRequest(url: URL(string: post.url)!))) {
+                    NavigationLink(destination: PostDetail(post: post)) {
                         PostRow(post: post)
                     }
                 }
