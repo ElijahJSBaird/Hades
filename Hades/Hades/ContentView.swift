@@ -28,15 +28,10 @@ struct ContentView: View {
                 Button(action: {
                     do {
                         try OAuth2Authorizer.sharedInstance.challengeWithAllScopes()
-//                       FeedPosts(listingViewModel: self.listingViewModel)
                     } catch { }
-//                    FeedPosts(listingViewModel: self.listingViewModel)
                 }) {
-//                    NavigationLink(destination: PostUIView()){
-//                        Text("Post")
-//                    }
                     NavigationLink(destination: FeedPosts(listingViewModel: listingViewModel)) {
-                        Text("Home")
+                        Text("Feed")
                     }
                     LoginButton()
                 }
@@ -44,7 +39,7 @@ struct ContentView: View {
             .padding()
         }
     }
-    
+}
 
 struct RedditLogo : View {
     var body: some View {
@@ -73,6 +68,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
 
 //struct AccountView: UIViewControllerRepresentable {
 //
