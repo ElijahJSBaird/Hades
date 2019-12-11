@@ -17,7 +17,10 @@ struct FeedPosts: View {
     @State private var subredditTitle = "r/all"
     
     var body: some View {
-        NavigationView {
+        VStack{
+            NavigationLink(destination: PostUIView()){
+                Text("Post")
+            }
             List {
                 TextField("Search Subreddit", text: self.$query) {
                     self.subredditTitle = "r/\(self.query.lowercased())"
@@ -29,9 +32,10 @@ struct FeedPosts: View {
                     }
                 }
             }
-            .navigationBarTitle(Text(subredditTitle))
         }
+        .navigationBarTitle(Text(subredditTitle))
         .onAppear(perform: fetchListing)
+        .navigationBarBackButtonHidden(true)
     }
     
     private func fetchListing() {

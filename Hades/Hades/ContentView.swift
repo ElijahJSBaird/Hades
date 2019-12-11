@@ -12,6 +12,7 @@ import UIKit
 
 struct ContentView: View {
     let sharedInstance = Config.sharedInstance
+    // let postUIView = PostUIView()
     let service: RedditService
     let listingViewModel: ListingViewModel
     //@EnvironmentObject var token: Token
@@ -27,12 +28,10 @@ struct ContentView: View {
                 Button(action: {
                     do {
                         try OAuth2Authorizer.sharedInstance.challengeWithAllScopes()
-//                       FeedPosts(listingViewModel: self.listingViewModel)
                     } catch { }
-//                    FeedPosts(listingViewModel: self.listingViewModel)
                 }) {
                     NavigationLink(destination: FeedPosts(listingViewModel: listingViewModel)) {
-                        Text("Home")
+                        Text("Feed")
                     }
                     LoginButton()
                 }
@@ -69,6 +68,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
 
 //struct AccountView: UIViewControllerRepresentable {
 //
